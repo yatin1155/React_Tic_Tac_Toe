@@ -34,7 +34,7 @@ function App() {
         <GameBoard turns={gameTurns} onSelectSqare={handleActivePlayer}></GameBoard>
       </div>
 
-      <Logs ></Logs>
+      <Logs turns={gameTurns} ></Logs>
     </>
   )
 }
