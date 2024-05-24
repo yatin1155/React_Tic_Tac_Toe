@@ -1,7 +1,7 @@
-export default function Logs({ turns }) {
+export default function Logs({ turns, playerInfo }) {
     return (
         <ol id="log">
-            {turns.map((item, index) => <li key={`${item.square.row}-${item.square.col}`}>{item.player} selected {item.square.row},{item.square.col}</li>)}
+            {turns.map((item, index) => <li key={`${item.square.row}-${item.square.col}`}>{playerInfo[item.player]} selected {item.square.row},{item.square.col}</li>)}
         </ol>
     )
 
